@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Barber App</h1>
+        <nav>
+            <a href="php/login.php">Iniciar Sesión</a>
+            <a href="php/register.php">Registrarse</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Agenda tu cita</h2>
+            <form action="php/schedule.php" method="POST">
+                <label for="barber">Barbero:</label>
+                <select name="barber" id="barber" required>
+                    <option value="1">Barbero 1</option>
+                    <option value="2">Barbero 2</option>
+                </select>
+                <label for="date">Fecha y Hora:</label>
+                <input type="datetime-local" name="date" id="date" required>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
